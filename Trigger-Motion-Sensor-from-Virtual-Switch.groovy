@@ -14,7 +14,6 @@
  *
  *  Description
  *  -----------
- *
  *  This simple SmartApp is designed to take an activation of a (Simulated/Virtual) Switch (for example, triggered by IFTTT) and create 
  *  an event similar to that of a motion sensor. My first very quick and dirty app (a SmartThings version of Hello World - without 
  *  the actual message!) which could be used in the "use case" below.
@@ -26,7 +25,6 @@
  *
  *  Use Case Requirement: Trigger Smart Home Monitor when email arrives in inbox.
  *  -----------------------------------------------------------------------------
- *
  *  An email is sent from a lagacy/non ST compatible (TrendNet) motion sensing camera (that has been powered-on by a SmartThings 
  *  outlet when a SmartThings "Routine" is enabled eg. "Away" or "GoodNight") to a dedicated Gmail account.  
  *  An IFTTT rule is listening for new mail to arrive in the Gmail account and when it does, it will then "Switch On" the
