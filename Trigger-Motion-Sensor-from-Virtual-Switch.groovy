@@ -15,7 +15,7 @@
  *  Description
  *  -----------
  *
- *  This simple SmartApp is designed to take an activation of a (Simulated/Virtual) Switch" (for example, triggered by IFTTT) and create 
+ *  This simple SmartApp is designed to take an activation of a (Simulated/Virtual) Switch (for example, triggered by IFTTT) and create 
  *  an event similar to that of a motion sensor. My first very quick and dirty app (a SmartThings version of Hello World - without the actual message!) 
  *  which could be used in the "use case" below.
  * 
@@ -31,7 +31,7 @@
  *  SmartThings "Routine" is enabled eg. "Away" or "GoodNight") to a dedicated Gmail account.  A IFTTT rule is listening for new mail to arrive 
  *  in the Gmail account and when it does, it will then "Switch On" the SmartThings virtual switch in this SmartApp.  
  *
- * 	Once the switch's event handler is called it will then send a message to a "Simulated Motion Sensor" that activity has been sensed
+ *  Once the switch's event handler is called it will then send a message to a "Simulated Motion Sensor" that activity has been sensed
  *  (and then reset state for switch and sensor).  This short burst of "activity" is enough to trigger the Smart Home Monitor into the alarmed state.
   */
   
@@ -70,17 +70,17 @@ def updated() {
 
 def initialize() {
 	log.debug "subscribe"
-    subscribe(theswitch, "switch.on", onHandler)
+    	subscribe(theswitch, "switch.on", onHandler)
 }
 
 def onHandler(evt){
 	log.debug "onHandler called: $evt"
 
 	// call active method on themotion object
-    themotion.active()
+    	themotion.active()
     
     // reset state for each object, ready for next trigger
-    theswitch.off()
-    themotion.inactive()
+    	theswitch.off()
+    	themotion.inactive()
 }
 
