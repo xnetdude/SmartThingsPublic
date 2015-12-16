@@ -27,13 +27,15 @@
  *  Use Case Requirement: Trigger Smart Home Monitor when email arrives in inbox.
  *  -----------------------------------------------------------------------------
  *
- *  An email is sent from a lagacy/non ST compatible (TrendNet) motion sensing camera (that has been powered-on by a SmartThings outlet when a 
- *  SmartThings "Routine" is enabled eg. "Away" or "GoodNight") to a dedicated Gmail account.  A IFTTT rule is listening for new mail to arrive 
- *  in the Gmail account and when it does, it will then "Switch On" the SmartThings virtual switch in this SmartApp.  
+ *  An email is sent from a lagacy/non ST compatible (TrendNet) motion sensing camera (that has been powered-on by a SmartThings 
+ *  outlet when a SmartThings "Routine" is enabled eg. "Away" or "GoodNight") to a dedicated Gmail account.  
+ *  An IFTTT rule is listening for new mail to arrive in the Gmail account and when it does, it will then "Switch On" the
+ *  SmartThings virtual switch in this SmartApp.  
  *
  *  Once the switch's event handler is called it will then send a message to a "Simulated Motion Sensor" that activity has been sensed
- *  (and then reset state for switch and sensor).  This short burst of "activity" is enough to trigger the Smart Home Monitor into the alarmed state.
-  */
+ *  (and then reset state for switch and sensor).  This short burst of "activity" is enough to trigger the Smart Home Monitor into 
+ *  the alarmed state.
+ */
   
 definition(
     name: "Motion Sensor Activation",
