@@ -22,7 +22,7 @@
  *  To Do
  *  -----
  *  Because we are using a binary switch and not a momentary switch the state needs to be set to "off" after the initial trigger otherwise 
- *  it will remain on so perhaps change the switch type although this works fine.
+ *  it will remain in the "on" state, so perhaps change the switch type although this works fine.
  *
  *  Use Case Requirement: Trigger Smart Home Monitor when email arrives in inbox.
  *  --------
